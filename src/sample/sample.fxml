@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="633.0">
+               <children>
+                  <HBox layoutX="109.0" layoutY="28.0" prefHeight="45.0" prefWidth="445.0" spacing="8.0">
+                     <children>
+                        <Label accessibleRole="TEXT_AREA" prefHeight="25.0" prefWidth="113.0" text="Enter Word">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField" prefHeight="25.0" prefWidth="180.0" />
+                        <Button fx:id="submit" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="89.0" text="Submit" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="label" layoutX="248.0" layoutY="476.0" minHeight="16" minWidth="69" />
+                  <Label fx:id="error" alignment="CENTER" contentDisplay="CENTER" layoutX="168.0" layoutY="604.0" prefHeight="20.0" prefWidth="319.0" textFill="#d30707">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="A" layoutX="207.0" layoutY="112.0" mnemonicParsing="false" onAction="#actionA" text="A" />
+                  <Button fx:id="B" layoutX="265.0" layoutY="113.0" mnemonicParsing="false" onAction="#actionB" text="B" />
+                  <Button fx:id="C" layoutX="317.0" layoutY="112.0" mnemonicParsing="false" onAction="#actionC" text="C" />
+                  <Button fx:id="D" layoutX="371.0" layoutY="112.0" mnemonicParsing="false" onAction="#onactionD" text="D" />
+                  <Button fx:id="E" layoutX="149.0" layoutY="174.0" mnemonicParsing="false" onAction="#onactionE" text="E" />
+                  <Button fx:id="F" layoutX="208.0" layoutY="174.0" mnemonicParsing="false" onAction="#onactionF" text="F" />
+                  <Button fx:id="G" layoutX="264.0" layoutY="175.0" mnemonicParsing="false" onAction="#onactionG" text="G" />
+                  <Button fx:id="H" layoutX="317.0" layoutY="175.0" mnemonicParsing="false" onAction="#onactionH" text="H" />
+                  <Button fx:id="I" layoutX="373.0" layoutY="175.0" mnemonicParsing="false" onAction="#onactionI" prefHeight="25.0" prefWidth="25.0" text="I" />
+                  <Button fx:id="J" layoutX="444.0" layoutY="174.0" mnemonicParsing="false" onAction="#onactionJ" prefHeight="25.0" prefWidth="25.0" text="J" />
+                  <Button fx:id="K" layoutX="146.0" layoutY="228.0" mnemonicParsing="false" onAction="#onactionK" text="K" />
+                  <Button fx:id="L" layoutX="208.0" layoutY="228.0" mnemonicParsing="false" onAction="#onactionL" text="L" />
+                  <Button fx:id="M" layoutX="262.0" layoutY="228.0" mnemonicParsing="false" onAction="#onactionM" text="M" />
+                  <Button fx:id="N" layoutX="317.0" layoutY="228.0" mnemonicParsing="false" onAction="#onactionN" text="N" />
+                  <Button fx:id="O" layoutX="371.0" layoutY="228.0" mnemonicParsing="false" onAction="#onactionO" text="O" />
+                  <Button fx:id="P" layoutX="442.0" layoutY="228.0" mnemonicParsing="false" onAction="#onactionP" text="P" />
+                  <Button fx:id="Q" layoutX="142.0" layoutY="288.0" mnemonicParsing="false" onAction="#onactionQ" text="Q" />
+                  <Button fx:id="R" layoutX="207.0" layoutY="288.0" mnemonicParsing="false" onAction="#onactionR" text="R" />
+                  <Button fx:id="S" layoutX="265.0" layoutY="288.0" mnemonicParsing="false" onAction="#onactionS" text="S" />
+                  <Button fx:id="T" layoutX="319.0" layoutY="288.0" mnemonicParsing="false" onAction="#onactionT" text="T" />
+                  <Button fx:id="U" layoutX="371.0" layoutY="288.0" mnemonicParsing="false" onAction="#onactionU" text="U" />
+                  <Button fx:id="V" layoutX="441.0" layoutY="288.0" mnemonicParsing="false" onAction="#onactionV" text="V" />
+                  <Button fx:id="W" layoutX="204.0" layoutY="351.0" mnemonicParsing="false" onAction="#onactionW" text="W" />
+                  <Button fx:id="X" layoutX="317.0" layoutY="351.0" mnemonicParsing="false" onAction="#onactionX" text="X" />
+                  <Button fx:id="Y" layoutX="268.0" layoutY="351.0" mnemonicParsing="false" onAction="#onactionY" text="Y" />
+                  <Button fx:id="Z" layoutX="371.0" layoutY="351.0" mnemonicParsing="false" onAction="#onactionZ" text="Z" />
+                  <ListView fx:id="previousWords" layoutX="76.0" layoutY="476.0" prefHeight="124.0" prefWidth="174.0" />
+                  <Label layoutX="113.0" layoutY="446.0" text="PreviousWords" />
+                  <Label fx:id="a" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="139.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="b" alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="140.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="c" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="140.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="d" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="140.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="e" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="202.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="f" alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="202.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="g" alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="202.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="h" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="203.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="i" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="203.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="j" alignment="CENTER" contentDisplay="CENTER" layoutX="445.0" layoutY="202.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="k" alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="264.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="l" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="264.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="m" alignment="CENTER" contentDisplay="CENTER" layoutX="267.0" layoutY="264.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="n" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="264.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="o" alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="264.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="p" alignment="CENTER" contentDisplay="CENTER" layoutX="445.0" layoutY="254.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="q" alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="319.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="r" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="319.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="s" alignment="CENTER" contentDisplay="CENTER" layoutX="267.0" layoutY="319.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="t" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="319.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="u" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="319.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="v" alignment="CENTER" contentDisplay="CENTER" layoutX="445.0" layoutY="319.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="w" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="382.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="383.0" prefHeight="17.0" prefWidth="24.0" fx:id="x" />
+                  <Label fx:id="y" alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="383.0" prefHeight="17.0" prefWidth="24.0" />
+                  <Label fx:id="z" alignment="CENTER" contentDisplay="CENTER" layoutX="374.0" layoutY="382.0" prefHeight="17.0" prefWidth="24.0" />
+                  <ListView fx:id="score" layoutX="313.0" layoutY="476.0" prefHeight="124.0" prefWidth="174.0" />
+                  <Label layoutX="375.0" layoutY="446.0" prefHeight="21.0" prefWidth="48.0" text="Score" />
+                  <Label fx:id="totalScore" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="404.0" prefHeight="21.0" prefWidth="113.0" />
+                  <Label layoutX="182.0" layoutY="404.0" text="Total Score:" />
+                  <Label layoutX="113.0" layoutY="604.0" text="Errors" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
